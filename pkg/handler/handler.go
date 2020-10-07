@@ -10,6 +10,8 @@ func (h *Handler) InitRoutes() *gin.Engine {
 	router := gin.New()
 
 	//registration and authorization
+
+	//endpoint
 	auth := router.Group("/auth")
 	{
 		auth.POST("/sign-up")
